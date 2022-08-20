@@ -241,6 +241,8 @@ header {
   border: 1px solid #D0D9D4;
   background: #EBF0EE;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-description {
