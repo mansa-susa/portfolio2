@@ -152,6 +152,7 @@ header {
   display: flex;
   height: 48px;
   width: 375px;
+  margin: 0 24px 0 12px;
 }
 
 #logo {
@@ -168,16 +169,37 @@ header {
   color: #28352f;
 }
 
-#hamburger {
+nav {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: 185px;
+  padding: 8px;
+}
+
+button.hamburger {
+  height: 24px;
+  width: 24px;
+  border-radius: 8px;
+  padding: 8px;
+  border: none;
+  background-color: inherit;
+}
+
+i.hamburger {
   height: 12px;
   width: 18px;
-  margin: 10px 197px;
+  
 }
 
 .main-section {
   padding: 64px 24px 0 24px;
   background: #fff url(imgs/main-section_bgd.png) center/375px 649px no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .primary-text {
   height: 192px;
@@ -191,7 +213,7 @@ header {
   color: #172b4d;
 }
 
-.primary-text span:nth-of-type(2n) {
+.primary-text h2 {
   color: #36b37e;
 }
 
@@ -213,7 +235,7 @@ header {
   justify-content: space-around;
   height: 20px;
   width: 170.2px;
-  margin: 58px 102.42px 60px 102.42px;
+  margin: 58px auto 60px;
   color: #505f79;
 }
 
