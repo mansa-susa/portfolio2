@@ -238,8 +238,14 @@ header {
   height: 474px;
   width: 327px;
   border-radius: 8px;
-  border: 1px solid #D0D9D4
+  border: 1px solid #D0D9D4;
+  background: #EBF0EE;
+  border-radius: 8px;
+}
 
+.project-description {
+  height: 222px;
+  background-color: #fff;
 }
 
 .card-about-me {
