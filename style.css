@@ -223,3 +223,29 @@ header {
   border-radius: 32px;
   padding: 8px;
 }
+
+.work-section {
+  height: 3283px;
+  width: 379px;
+  border-radius: 0px;
+  padding: 64px, 24px, 64px, 24px;
+  display: grid;
+  grid-template-columns: ;
+
+}
+
+.card-portfolio {
+  height: 474px;
+  width: 327px;
+  border-radius: 8px;
+  border: 1px solid #D0D9D4
+
+}
+
+.card-about-me {
+  height: 352px;
+  width: 327px;
+  border: 1px solid #C1C7D0;
+  border-radius: 8px;
+
+}
