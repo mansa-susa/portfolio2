@@ -189,7 +189,6 @@ button.hamburger {
 i.hamburger {
   height: 12px;
   width: 18px;
-  
 }
 
 .main-section {
@@ -199,7 +198,6 @@ i.hamburger {
   flex-direction: column;
   align-items: center;
 }
-
 
 .primary-text {
   height: 192px;
