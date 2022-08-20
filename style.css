@@ -1,11 +1,3 @@
-/**
- * /* http://meyerweb.com/eric/tools/css/reset/
- *    v2.0 | 20110126
- *    License: none (public domain)
- *
- * @format
- */
-
 html,
 body,
 div,
@@ -38,7 +30,7 @@ kbd,
 q,
 s,
 samp,
-small, 
+small,
 strike,
 strong,
 sub,
@@ -93,8 +85,9 @@ video {
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
- }
- /* HTML5 display-role reset for older browsers */
+}
+
+/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -107,72 +100,72 @@ menu,
 nav,
 section {
   display: block;
- }
- 
+}
+
 body {
   line-height: 1;
- }
- 
+}
+
 ol,
 ul {
   list-style: none;
- }
- 
+}
+
 blockquote,
-  q {
-   quotes: none;
- }
- 
+q {
+  quotes: none;
+}
+
 blockquote::before,
 blockquote::after,
 q::before,
 q::after {
   content: "";
   content: none;
- }
- 
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
- }
- 
+}
+
 * {
   box-sizing: border-box;
- }
- 
+}
+
 a {
   text-decoration: none;
   color: inherit;
- }
- 
- /*
+}
+
+/*
  ----------------------------------------------------------------------------------------------------------------
  ----------------------------------------------------------------------------------------------------------------
  */
 
- .container {
-    margin: 0 auto;
-    width: 375px;
- }
+.container {
+  margin: 0 auto;
+  width: 375px;
+}
 
 header {
   display: flex;
   height: 48px;
   width: 375px;
- }
+}
 
 #logo {
   height: 48px;
   width: 114px;
   padding: 10px 12px 10px 12px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
   align-items: center;
   text-align: center;
-  color: #28352F;    
+  color: #28352f;
 }
 
 #hamburger {
@@ -189,31 +182,30 @@ header {
 .primary-text {
   height: 192px;
   width: 327px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .primary-text span:nth-of-type(2n) {
-  color: #36B37E;
+  color: #36b37e;
 }
 
 .secondary-text {
   height: 164px;
   width: 327px;
   margin-top: 58px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #172B4D;
-
+  color: #172b4d;
 }
 
 .socials {
@@ -222,9 +214,7 @@ header {
   height: 20px;
   width: 170.2px;
   margin: 58px 102.42px 60px 102.42px;
-  color: #505F79;
-
-
+  color: #505f79;
 }
 
 #chevron {
@@ -232,5 +222,4 @@ header {
   width: 40px;
   border-radius: 32px;
   padding: 8px;
-
 }
