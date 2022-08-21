@@ -138,6 +138,16 @@ a {
   color: inherit;
 }
 
+button {
+  display: inline-block;
+  height: 48px;
+  width: 122px;
+  border-radius: 4px;
+  padding: 12px;
+  background: #36B37F;
+  border: none;
+}
+
 /*
  ----------------------------------------------------------------------------------------------------------------
  ----------------------------------------------------------------------------------------------------------------
@@ -258,6 +268,29 @@ i.hamburger {
   row-gap: 24px;
 }
 
+
+.work-section-title {
+  width: 327px;
+  height: 97px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #172B4D;
+  margin-top: 22px;
+}
+
+.work-section > hr {
+  width: 48px;
+  height: 4px;
+  background: #36B37E;
+  border-radius: 24px;
+}
+
 .card-portfolio {
   height: 474px;
   width: 327px;
@@ -275,6 +308,9 @@ i.hamburger {
 .project-description {
   height: 222px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-description > h3 {
@@ -297,7 +333,81 @@ i.hamburger {
   height: 32px;
   margin: 16px 11px;
   justify-content: space-between;
+}
 
+.tech-skills > li {
+  background-color: #EBF0EE;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-family: 'Inter';
+  font-style: normal; 
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3A4A42;
+}
+
+.project-button, .resume-button {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.resume-button  {
+  width: 159px;
+  height: 48px;
+  margin-top: 24px;
+  margin-bottom: 59px;
+}
+
+.about-section {
+  margin-top: 4px;
+  padding: 24px 12px 0 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(imgs/about-me-mobile-bg1.png), url(imgs/about-me-mobile-bg2.png);
+  background-position: 285px -25px, 0px 275px;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.text-about-me > h2 {
+  width: 351px;
+  height: 48px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172B4D;
+}
+
+
+.text-about-me > p {
+  width: 351px;
+  height: 189px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526E;
+  margin-top: 24px;
 }
 
 .card-about-me {
@@ -305,5 +415,53 @@ i.hamburger {
   width: 327px;
   border: 1px solid #C1C7D0;
   border-radius: 8px;
+  margin-top: 24px;
+  background: #EBF0EE;
+}
 
+
+.icon-holder {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    margin: 40px 123px 64px 124px;
+    border-radius: 40px;
+    box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-about-me > h3 {
+  width: 337px;
+  height: 32px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+}
+
+.card-about-me > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 24px;
+   }
+
+.card-about-me > ul li {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36B37E;
+  padding: 12px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  gap: 8px;
 }
