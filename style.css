@@ -461,3 +461,125 @@ i.hamburger {
   border-radius: 8px;
   gap: 8px;
 }
+
+.contact-section {
+  width: 327px;
+  height: 330px;
+  padding: 64px 24px 8px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section > p {
+  width: 327px;
+  height: 363px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172B4D;
+  margin-bottom: 58px;
+}
+
+.contact-section > form ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+  width: 327px;
+  height: 330px;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.contact-section > form > ul > li:nth-child(-n + 2) {
+  height: 48px;
+  width: 327px;
+  border-radius: 4px;
+  border: 1px solid #D0D9D4;
+  background: #fff;
+  padding: 15px 16px;
+}
+
+
+
+.contact-section > form > ul > li:nth-child(-n + 2) > input {
+  height: 18px;
+  width: 295px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
+} 
+
+.contact-section > form > ul > li:nth-child(3n) {
+  padding: 12px;
+}
+
+.contact-section > form > ul > li > textarea {
+  height: 114px;
+  width: 327px;
+  border-radius: 4px;
+  border: 1px solid #60C095;
+  background: #FFFFFF;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091E42;
+}
+
+.contact-section button {
+  height: 48px;
+  width: 129px;
+  border-radius: 4px;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFF;
+}
+
+.contact-section .socials {
+  margin: 60px 78.42px 17px 78.42px;
+}
+
+.contact-section h3 {
+  height: 189px;
+  width: 375px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526E;
+}
+
+footer {
+  height: 34px;
+  width: 375px;
+  padding: 21px 121px 8px 120px;
+}
+
+footer > hr {
+  background: #E5E5E5;
+  width: 130px;
+  height: 10px;
+  border-radius: 4px;
+}
