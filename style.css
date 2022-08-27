@@ -146,7 +146,25 @@ button {
   padding: 12px;
   background: #36b37f;
   border: none;
+  border-radius: 4px;
 }
+
+button:enabled {
+  color: #fff;
+  background: #36B37F;
+}
+
+button:hover {
+  background: #36B37F;
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  color: #fff;
+}
+
+button:active {
+  color: #fff;
+  background: #008552;
+}
+
 
 /*
  ----------------------------------------------------------------------------------------------------------------
@@ -228,7 +246,7 @@ footer span {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  color: #4252;
+  color: #42526E;
   width: 375px;
   height: 189px;
 }
