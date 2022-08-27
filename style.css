@@ -221,6 +221,18 @@ i.hamburger {
   color: #172b4d;
 }
 
+footer span {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #4252;
+  width: 375px;
+  height: 189px;
+}
+
 .primary-text span {
   color: #36b37e;
 }
@@ -575,16 +587,4 @@ footer .socials {
 footer {
   height: 373px;
   text-align: center;
-}
-
-footer span {
-  font-family: 'inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  text-align: center;
-  color: #4252;
-  width: 375px;
-  height: 189px;
 }
