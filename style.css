@@ -475,12 +475,14 @@ footer > h3 {
 }
 
 .contact-section {
-  width: 327px;
-  height: 330px;
+  width: 375px;
+  height: 925px;
   padding: 64px 24px 8px 24px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  background-image: url("imgs/contact-bg.png");
+  background-repeat: no-repeat;
+  background-position: 319px 740px;
 }
 
 .contact-section > p {
@@ -571,8 +573,6 @@ footer .socials {
 }
 
 footer {
- position: absolute;
- bottom: 0;
- left: 0;
- right: 0;
+  height: 373px;
+  text-align: center;
 }
