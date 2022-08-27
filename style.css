@@ -576,3 +576,15 @@ footer {
  left: 0;
  right: 0;
 }
+
+footer span {
+  font-family: 'inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #4252;
+  width: 375px;
+  height: 189px;
+}
