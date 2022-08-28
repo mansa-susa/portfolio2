@@ -609,3 +609,112 @@ footer {
   height: 373px;
   text-align: center;
 }
+
+/*
+ ----------------------------------------------------------------------------------------------------------------
+ desktop version
+ ----------------------------------------------------------------------------------------------------------------
+ */
+
+ @media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    font-size: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*padding: 0 6.7em 0 6.7em; */
+  }
+
+  header {
+    grid-column: 1 / span 3;
+    width: 100%;
+    border: 1px solid dodgerblue;
+    display: flex;
+    justify-content: center;
+  }
+
+  #logo, .hamburger, .work-section hr  {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 5em;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2em;
+  }
+  
+  .main-section {
+    width: 100%;
+    grid-column: 1 / span 3;
+    padding: 10em 17em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .main-section h1 {
+    grid-column: 1 /4;
+    width: auto;
+    height: auto;
+  }
+
+  .secondary-text {
+    grid-column: 1 / span 3;
+    width: 90%;
+    height: auto;
+    margin: 1em 0 0 0;
+  }
+  
+  .main-section .socials {
+    grid-column: 2 / 3;
+    margin: 1.5em;
+    width: auto;
+  }
+
+  #chevron {
+    grid-column: 2 / 3;
+    margin: 0 15em;
+  }
+  
+  .work-section {
+    width: 100%;
+    height: auto;
+    grid-column: 1 / span 3;
+    padding: 0 15em;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.2em;
+
+  }
+
+  .work-section-title {
+    width: 100%;
+    grid-column: 2 / 4;
+  }
+  
+  .about-section {
+    width: 100%;
+    height: auto;
+    grid-column: 1 / span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* margin: 0; */
+    padding: 6em 15em;
+    gap: 1em; 
+  }
+  
+  .text-about-me {
+    width: 100%;
+    height: auto;
+    grid-column: 1 / span 3;
+  }
+
+  .text-about-me p{
+    height: auto;
+    width: 80%;
+  }
+
+ }
