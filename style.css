@@ -365,14 +365,14 @@ footer > h3 {
 }
 
 .tech-skills {
-  display: flex;
+  display: block;
   width: 305px;
   height: 32px;
   margin: 16px 11px;
-  justify-content: space-between;
 }
 
 .tech-skills > li {
+  float: left;
   background-color: #ebf0ee;
   padding: 8px 12px;
   border-radius: 4px;
