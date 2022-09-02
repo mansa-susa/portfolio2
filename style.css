@@ -634,7 +634,7 @@ footer {
     justify-content: center;
   }
 
-  #logo, .hamburger, .work-section hr  {
+  #logo, .hamburger, .work-section hr, .contact-section .socials  {
     display: none;
   }
 
@@ -716,5 +716,43 @@ footer {
     height: auto;
     width: 80%;
   }
+  
+  .contact-section {
+    width: 100%;
+    height: auto;
+    grid-column: 1 / span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* margin: 0; */
+    padding: 6em 15em;
+    gap: 1em;
+  }
+
+  .contact-section p {
+    width: auto;
+    grid-column: 1 / 3;
+    height: auto;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 52px;
+  }
+
+  .contact-section form, .contact-section form ul {
+    width: 100%;
+    grid-column: 3 / 5;
+    height: auto;
+  }
+
+  .contact-section li {
+    width: 100%;
+    height: auto;
+  }
+  
+  #first_name, #email, #message {
+    width: inherit;
+    height: inherit;
+   }
 
  }
