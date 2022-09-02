@@ -149,7 +149,7 @@ button {
 }
 
 button:enabled {
-  background-color: #36B37F;
+  background-color: #36b37f;
 }
 
 button:hover {
@@ -609,7 +609,7 @@ textarea::placeholder {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
-  background-color: #36B37F;
+  background-color: #36b37f;
 }
 
 footer .socials {
