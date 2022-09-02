@@ -215,6 +215,10 @@ nav {
   width: 18px;
 }
 
+nav ul.nav-links {
+  display: none;
+}
+
 .main-section {
   padding: 64px 24px 0 24px;
   background: #fff url(imgs/main-section_bgd.png) center/375px 649px no-repeat;
