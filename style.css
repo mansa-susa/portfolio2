@@ -165,13 +165,9 @@ button:enabled {
 button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   color: #fff;
-<<<<<<< HEAD
   animation: btn 3s ease-in-out infinite alternate;
   transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   opacity: 1;
-=======
-  border-style: none;
->>>>>>> desktop_v2
 }
 
 button:active {
@@ -231,7 +227,6 @@ button.hamburger {
   width: 18px;
 }
 
-<<<<<<< HEAD
 @keyframes image-background {
   0% {
     transform: scale(1);
@@ -240,10 +235,6 @@ button.hamburger {
   100% {
     transform: scale(2);
   }
-=======
-nav ul.nav-links {
-  display: none;
->>>>>>> desktop_v2
 }
 
 .main-section {
