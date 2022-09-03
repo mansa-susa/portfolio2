@@ -634,7 +634,8 @@ footer {
     justify-content: center;
   }
 
-  #logo, .hamburger, .work-section hr, .contact-section .socials  {
+  #logo, .hamburger, .work-section hr, 
+   .contact-section .socials, footer span {
     display: none;
   }
 
@@ -652,6 +653,7 @@ footer {
     padding: 10em 17em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    background-image: none;
   }
   
   .main-section h1 {
@@ -701,7 +703,6 @@ footer {
     grid-column: 1 / span 3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* margin: 0; */
     padding: 6em 15em;
     gap: 1em; 
   }
@@ -723,7 +724,6 @@ footer {
     grid-column: 1 / span 3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* margin: 0; */
     padding: 6em 15em;
     gap: 1em;
   }
@@ -749,10 +749,51 @@ footer {
     width: 100%;
     height: auto;
   }
+
+  .contact-section > form > ul > li:nth-child(-n + 2) {
+    width: 100%;
+    height: auto;
+  }
   
+  textarea#message {
+    height: 114px;
+  }
+
   #first_name, #email, #message {
     width: inherit;
     height: inherit;
    }
+  
+  footer {
+    grid-column: 1 / span 3;
+    height: 72px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-section  {
+    background-image: url(imgs/desktop-main-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
- }
+  .text-about-me {
+    background-image: url(imgs/desktop-about-me1.png), url(imgs/desktop-about-me-bg2.png);
+    background-repeat: no-repeat;
+    background-size: 132px, 673px;
+    background-position: 0 132px, 330px 0px;
+  }
+  
+  
+  .contact-section {
+    background-image:  url(imgs/desktop-contact-form-bg1.png), url(imgs/desktop-contact-form-bg2.png),
+                       url(imgs/desktop-contact-form-bg3.png);
+    background-repeat: no-repeat;
+    background-position: 0 280px, 224px 414px, 1223px 81px;
+  
+}
+
+
+
