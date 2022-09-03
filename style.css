@@ -616,14 +616,15 @@ footer {
  ----------------------------------------------------------------------------------------------------------------
  */
 
- @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 100%;
     font-size: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /*padding: 0 6.7em 0 6.7em; */
+
+    /* padding: 0 6.7em 0 6.7em; */
   }
 
   header {
@@ -634,8 +635,11 @@ footer {
     justify-content: center;
   }
 
-  #logo, .hamburger, .work-section hr, 
-   .contact-section .socials, footer span {
+  #logo,
+  .hamburger,
+  .work-section hr,
+  .contact-section .socials,
+  footer span {
     display: none;
   }
 
@@ -646,16 +650,18 @@ footer {
     font-family: 'Inter', sans-serif;
     font-size: 1.2em;
   }
-  
+
   .main-section {
     width: 100%;
     grid-column: 1 / span 3;
     padding: 10em 17em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-image: none;
+    background-image: url(imgs/desktop-main-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-  
+
   .main-section h1 {
     grid-column: 1 /4;
     width: auto;
@@ -668,7 +674,7 @@ footer {
     height: auto;
     margin: 1em 0 0 0;
   }
-  
+
   .main-section .socials {
     grid-column: 2 / 3;
     margin: 1.5em;
@@ -679,7 +685,7 @@ footer {
     grid-column: 2 / 3;
     margin: 0 15em;
   }
-  
+
   .work-section {
     width: 100%;
     height: auto;
@@ -689,14 +695,13 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.2em;
-
   }
 
   .work-section-title {
     width: 100%;
     grid-column: 2 / 4;
   }
-  
+
   .about-section {
     width: 100%;
     height: auto;
@@ -704,20 +709,24 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 6em 15em;
-    gap: 1em; 
+    gap: 1em;
   }
-  
+
   .text-about-me {
     width: 100%;
     height: auto;
     grid-column: 1 / span 3;
+    background-image: url(imgs/desktop-about-me1.png), url(imgs/desktop-about-me-bg2.png);
+    background-repeat: no-repeat;
+    background-size: 132px, 673px;
+    background-position: 0 132px, 330px 0;
   }
 
-  .text-about-me p{
+  .text-about-me p {
     height: auto;
     width: 80%;
   }
-  
+
   .contact-section {
     width: 100%;
     height: auto;
@@ -726,6 +735,12 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 6em 15em;
     gap: 1em;
+    background-image:
+      url(imgs/desktop-contact-form-bg1.png),
+      url(imgs/desktop-contact-form-bg2.png),
+      url(imgs/desktop-contact-form-bg3.png);
+    background-repeat: no-repeat;
+    background-position: 0 280px, 224px 414px, 1223px 81px;
   }
 
   .contact-section p {
@@ -739,7 +754,8 @@ footer {
     line-height: 52px;
   }
 
-  .contact-section form, .contact-section form ul {
+  .contact-section form,
+  .contact-section form ul {
     width: 100%;
     grid-column: 3 / 5;
     height: auto;
@@ -754,16 +770,18 @@ footer {
     width: 100%;
     height: auto;
   }
-  
+
   textarea#message {
     height: 114px;
   }
 
-  #first_name, #email, #message {
+  #first_name,
+  #email,
+  #message {
     width: inherit;
     height: inherit;
-   }
-  
+  }
+
   footer {
     grid-column: 1 / span 3;
     height: 72px;
@@ -772,28 +790,4 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  
-  .main-section  {
-    background-image: url(imgs/desktop-main-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .text-about-me {
-    background-image: url(imgs/desktop-about-me1.png), url(imgs/desktop-about-me-bg2.png);
-    background-repeat: no-repeat;
-    background-size: 132px, 673px;
-    background-position: 0 132px, 330px 0px;
-  }
-  
-  
-  .contact-section {
-    background-image:  url(imgs/desktop-contact-form-bg1.png), url(imgs/desktop-contact-form-bg2.png),
-                       url(imgs/desktop-contact-form-bg3.png);
-    background-repeat: no-repeat;
-    background-position: 0 280px, 224px 414px, 1223px 81px;
-  
 }
-
-
-
