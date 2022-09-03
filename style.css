@@ -144,24 +144,34 @@ button {
   width: 122px;
   border-radius: 4px;
   padding: 12px;
-  background: #36b37f;
+  background: none;
   border: none;
 }
 
 button:enabled {
-  color: #fff;
-  background: #36b37f;
+  background-color: #36b37f;
+}
+
+@keyframes btn {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.3);
+  }
 }
 
 button:hover {
-  background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   color: #fff;
+  animation: btn 3s ease-in-out infinite alternate;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  opacity: 1;
 }
 
 button:active {
-  color: #fff;
-  background: #008552;
+  color: white;
 }
 
 /*
@@ -204,17 +214,27 @@ nav {
 }
 
 button.hamburger {
-  height: 24px;
-  width: 24px;
+  height: 40px;
+  width: 40px;
   border-radius: 8px;
   padding: 8px;
-  border: none;
-  background-color: inherit;
+  border-style: none;
+  background-color: #fff;
 }
 
-i.hamburger {
+.fa-solid {
   height: 12px;
   width: 18px;
+}
+
+@keyframes image-background {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(2);
+  }
 }
 
 .main-section {
@@ -223,6 +243,7 @@ i.hamburger {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: image-background 5s ease-in-out infinite alternate;
 }
 
 .primary-text {
@@ -280,8 +301,15 @@ footer span {
   width: 40px;
   border-radius: 32px;
   padding: 8px;
-  background-color: #fff;
   border: 1px solid #dfe1e6;
+}
+
+#chevron:enabled {
+  background: white;
+}
+
+.fa-chevron-down {
+  color: black;
 }
 
 .work-section {
@@ -396,6 +424,7 @@ footer > h3 {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
+  background: #36b37e;
 }
 
 .resume-button {
@@ -599,6 +628,7 @@ textarea::placeholder {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
+  background-color: #36b37f;
 }
 
 footer .socials {
