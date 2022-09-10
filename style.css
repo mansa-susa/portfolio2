@@ -654,7 +654,7 @@ footer {
     display: none;
   }
 
-  .nav-links {
+  nav ul.nav-links {
     display: flex;
     justify-content: space-around;
     gap: 5em;
