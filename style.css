@@ -186,10 +186,6 @@ header.menuDialog {
   margin: 0;
 }
 
-header.menuDialog #logo {
-  display: none;
-}
-
 #logo {
   height: 48px;
   width: 114px;
@@ -202,6 +198,10 @@ header.menuDialog #logo {
   align-items: center;
   text-align: center;
   color: #28352f;
+}
+
+header.menuDialog #logo {
+  display: none;
 }
 
 nav {
@@ -236,14 +236,13 @@ button.times {
   display: none;
 }
 
-.menuDialog button.times{
+.menuDialog button.times {
   display: block;
   background-color: transparent;
   height: 40px;
   width: 40px;
   margin-left: auto;
 }
-
 
 .fa-solid {
   height: 12px;
@@ -258,17 +257,44 @@ nav ul.nav-links {
   display: block;
 }
 
+.tech-skills > li {
+  background-color: #ebf0ee;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+}
+
+.card-about-me > ul li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  gap: 8px;
+}
+
 .menuDialog nav ul.nav-links li {
-height: 24px;
-width: 251px;
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 32px;
-line-height: 44px;
-color: #3A4A42;
-padding: 16px;
-margin-bottom: 24px;
+  height: 24px;
+  width: 251px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
+  padding: 16px;
+  margin-bottom: 24px;
 }
 
 .main-section {
@@ -433,19 +459,6 @@ footer > h3 {
   justify-content: space-between;
 }
 
-.tech-skills > li {
-  background-color: #ebf0ee;
-  padding: 8px 12px;
-  border-radius: 4px;
-  margin-right: 8px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #3a4a42;
-}
-
 .project-button,
 .resume-button {
   font-family: 'Inter', sans-serif;
@@ -548,20 +561,6 @@ footer > h3 {
   gap: 8px;
   justify-content: center;
   margin-top: 24px;
-}
-
-.card-about-me > ul li {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #36b37e;
-  padding: 12px;
-  background: #fff;
-  border-radius: 8px;
-  gap: 8px;
 }
 
 .contact-section {
