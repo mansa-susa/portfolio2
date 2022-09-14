@@ -2,6 +2,10 @@ function displayMenu () {
   menuBox.classList.toggle('menuDialog');
 }
 
+function closeMenu () {
+  menuBox.classList.toggle('menuDialog');
+}
+
 const menuBox = document.getElementById('menuBox');       //variable declarations to get nodes//
 const menuDialog = menuBox.querySelector('#menuDialog');
 const menuBtn = menuDialog.querySelector(".hamburger");
