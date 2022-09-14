@@ -1,12 +1,15 @@
+// displayMenu function declaration //
 function displayMenu () {
   menuBox.classList.toggle('menuDialog');
 }
 
+// closeMenu function declaration //
 function closeMenu () {
   menuBox.classList.toggle('menuDialog');
 }
 
-const menuBox = document.getElementById('menuBox');       //variable declarations to get nodes//
+//variable declarations to get nodes//
+const menuBox = document.getElementById('menuBox');       
 const menuDialog = menuBox.querySelector('#menuDialog');
 const menuBtn = menuDialog.querySelector(".hamburger");
 const closeBtn = menuDialog.querySelector(".times");
