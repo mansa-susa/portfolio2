@@ -742,6 +742,16 @@ textarea::placeholder {
   background-color: #36b37f;
 }
 
+.errorbox {
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    margin-top: 45px;
+    margin-left: 65px;
+    color: red;
+    text-align: center;
+}
+
 footer .socials {
   margin: 60px 78.42px 17px 78.42px;
 }

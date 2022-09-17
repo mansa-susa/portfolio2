@@ -89,8 +89,9 @@ mainSection.after(workSection);
 projectButtons = document.querySelectorAll('.work-section .project-button'); 
 projectButtons.forEach(button => button.addEventListener('click', displayPopup));
 
-const form = document.getElementById(contact-form);
-const email = form.elements['email'];
+const form = document.getElementById('contact-form');
+const email = document.getElementById('email');
+const error = document.querySelector('#error');
 
 menuBtn.addEventListener('click', displayMenu); // hamburger event listener //
 
@@ -119,7 +120,22 @@ Array.from(menuLinks.children).forEach((child) => child.addEventListener('click'
     document.body.appendChild(popupWindow);
  }
 
- function validateEmail (email) {
-  if (email.value)
-  email
+ function validateEmail(emailchecker) {
+  if (emailchecker.match(/^[a-z@.0-9-_]*$/)) {
+    console.log("hey");
+    return true;
+  }
+  console.log("ney");
+  return false;
  }
+
+ form.addEventListener('submit', (e) => {
+  if (validateEmail(email.value)) {
+    error.textContent = '';
+  }
+  else {
+    e.preventDefault();
+    error.style.display = 'flex';
+    error.textContent = "Please enter a valid email address in lowercase";
+  }
+ })
