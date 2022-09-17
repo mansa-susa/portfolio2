@@ -16,7 +16,7 @@
         <a id="logo" href="index.html">Welcome</a>
         <nav id="menuDialog">
           <button type="button" class="hamburger"><i class="fa-solid fa-bars hamburger"></i></button>
-          <button type="button" class="times"><i id="times" class="fa-solid fa-xmark"></i></button>
+          <button type="button" class="times"><i class="fa-solid fa-xmark"></i></button>
           <ul class="nav-links">
             <li><a href="#Portfolio">Portfolio</a></li>
             <li><a href="#About">About</a></li>
@@ -24,7 +24,7 @@
           </ul>
         </nav>
       </header>
-      
+
       <section class="main-section">
         <h1 class="primary-text">Hey there. I'm Hammed.
           <br> 
@@ -47,96 +47,8 @@
         <button type="button" id="chevron"><i class="fa-solid fa-chevron-down"></i></button>
       </section>
 
-      <section class="work-section">
-        <h2 id="Portfolio" class="work-section-title">My Recent Works</h2>
-        
-        <hr>
 
-        <article class="card-portfolio">
-          <div class="img-placeholder"></div>
-          <div class="project-description">
-            <h3>Multi-Post Stories Gain+Glory</h3>
-            <ul class="tech-skills">
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>JavaScript</li>
-              <li>html</li>
-            </ul>
-            <button type="button" class="project-button">See Project</button>
-          </div>
-        </article>
-
-        <article class="card-portfolio">
-          <div class="img-placeholder"></div>
-          <div class="project-description">
-            <h3>Multi-Post Stories Gain+Glory</h3>
-            <ul class="tech-skills">
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>JavaScript</li>
-              <li>html</li>
-            </ul>
-            <button type="button" class="project-button">See Project</button>
-          </div>
-        </article>
-
-        <article  class="card-portfolio">
-          <div class="img-placeholder"></div>
-          <div class="project-description">
-            <h3>Multi-Post Stories Gain+Glory</h3>
-            <ul class="tech-skills">
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>JavaScript</li>
-              <li>html</li>
-            </ul>
-            <button type="button" class="project-button">See Project</button>
-          </div>
-        </article>
-       
-        <article class="card-portfolio">
-          <div class="img-placeholder"></div>
-          <div class="project-description">
-            <h3>Multi-Post Stories Gain+Glory</h3>
-            <ul class="tech-skills">
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>JavaScript</li>
-              <li>html</li>
-            </ul>
-            <button type="button" class="project-button">See Project</button>
-          </div>
-        </article>
-
-        <article class="card-portfolio">
-          <div class="img-placeholder"></div>
-          <div class="project-description">
-            <h3>Multi-Post Stories Gain+Glory</h3>
-            <ul class="tech-skills">
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>JavaScript</li>
-              <li>html</li>
-            </ul>
-            <button type="button" class="project-button">See Project</button>
-          </div>
-        </article>
-        
-        <article class="card-portfolio">
-          <div class="img-placeholder"></div>    
-          <div class="project-description">
-            <h3>Multi-Post Stories Gain+Glory</h3>
-            <ul class="tech-skills">
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>JavaScript</li>
-              <li>html</li>
-            </ul>
-            <button type="button" class="project-button">See Project</button>
-          </div>
-        </article>
-      </section>
-
+        <!-- Work Section is loaded here dynamically -->
       <section class="about-section">
         <article class="text-about-me">
           <h2 id="About">About me</h2>
@@ -188,7 +100,7 @@
       <section id="Contact" class="contact-section">
         <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
 
-        <form action="https://formspree.io/f/xvolveaz" method="post">
+        <form id="contact-form" action="https://formspree.io/f/xvolveaz" method="post">
           
           <ul>
             <li><input type="text" name="first_name" id="first_name" placeholder="Full name" required maxlength="30"/></li>
@@ -198,18 +110,12 @@
             </li>
             <li><button type="submit">Get in touch</button></li>
           </ul>
+          <div class="errorbox">
+          <p id="error"></p>
+          </div>
         </form> 
-
-        <ul class="socials">
-          <li><a href="https://github.com/mansa-susa/" aria-label="visit my github profile"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/faruq-hammed-931862169/" aria-label="visit my linkedin profile"><i class="fa-brands fa-linkedin-in"></i></a></li>
-          <li><a href="#" aria-label="visit my angel list profile"><i class="fa-brands fa-angellist"></i></a></li>
-          <li><a href="https://twitter.com/mansa_susa" aria-label="visit my twitter profile"><i class="fa-brands fa-twitter"></i></a></li>
-          <li><a href="#" aria-label="visit my medium profile"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
-        </ul>
-
-        
       </section>
+
       <footer>
 
       <ul class="socials">
@@ -222,6 +128,7 @@
         
       <span>mansasusa18@gmail.com</span>
       </footer>
+    
     </div>
     <script src="main.js"></script>
   </body>
