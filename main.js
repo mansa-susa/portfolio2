@@ -89,10 +89,8 @@ mainSection.after(workSection);
 projectButtons = document.querySelectorAll('.work-section .project-button'); 
 projectButtons.forEach(button => button.addEventListener('click', displayPopup));
 
-/*for (let  i = 0; i < portfolioCards.length; i++) {
-  projectButtons[i].addEventListener('click', displayPopup)
-}
-*/
+const form = document.getElementById(contact-form);
+const email = form.elements['email'];
 
 menuBtn.addEventListener('click', displayMenu); // hamburger event listener //
 
@@ -119,4 +117,9 @@ Array.from(menuLinks.children).forEach((child) => child.addEventListener('click'
                 </div>
            `;
     document.body.appendChild(popupWindow);
+ }
+
+ function validateEmail (email) {
+  if (email.value)
+  email
  }
