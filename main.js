@@ -85,14 +85,8 @@ portfolioCards.forEach(card => {
 
 mainSection.after(workSection);
 
-
 projectButtons = document.querySelectorAll('.work-section .project-button'); 
 projectButtons.forEach(button => button.addEventListener('click', displayPopup));
-
-/*for (let  i = 0; i < portfolioCards.length; i++) {
-  projectButtons[i].addEventListener('click', displayPopup)
-}
-*/
 
 menuBtn.addEventListener('click', displayMenu); // hamburger event listener //
 
@@ -101,10 +95,23 @@ closeBtn.addEventListener('click', closeMenu); // times event listener //
 // Event listener for each menu link //
 Array.from(menuLinks.children).forEach((child) => child.addEventListener('click', closeMenu));
 
+ const popup = document.querySelector('.project-popup');
+
+let popwindow = document.querySelector('.popup-window');
+
+ popwindow.addEventListener('click', (e) => {
+  const temp = e.target.getAttribute('id');
+  if(temp) {
+    popup.style.display = 'none';
+  }
+})
+
  function displayPopup () {
-    const popupWindow = document.createElement('div');
-    popupWindow.className = 'project-popup';
-    popupWindow.innerHTML += `
+      popwindow.innerHTML += `
+                <div class"project-popup">
+                <span type="button" id="xbutton" class="closeBtn">
+                &times;
+                </span>
                 <img src="imgs/popup-mobile.png" alt="">
                 <h2 class="popup-title"> Keeping track of hundreds of components </h2>
                 <ul class="popup-technologies">
@@ -112,11 +119,11 @@ Array.from(menuLinks.children).forEach((child) => child.addEventListener('click'
                   <li>css</li>
                   <li>Javascript</li>
                 </ul>
-                <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+                <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
                 <div>
                   <button>See Live  <img src="imgs/live_icon.png" id="live-icon"></button>
                   <button>See Source <i class="fab fa-github"></i></button>
                 </div>
+                </div>
            `;
-    document.body.appendChild(popupWindow);
  }

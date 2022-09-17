@@ -242,6 +242,16 @@ i.fa-bars, i.fa-xmark {
   color: #ACB7C3;
 }
 
+.closeBtn {
+  width: 100%;
+  padding: 5px;
+  color: black;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
 .menuDialog button.hamburger {
   display: none;
 }
@@ -497,9 +507,9 @@ footer > h3 {
   padding: 16px 16px 20px 16px;
   margin: 0 auto;
   background-color: #fff;
-  display: flex;
   flex-direction: column;
   justify-content: center;
+  display: flex;
   position: fixed;
   top: 0;
 }
